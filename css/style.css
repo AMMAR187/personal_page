@@ -1,0 +1,11 @@
+.navbar-default {
+    background: #fff !important;
+    border: 0 !important;
+    font-family: Poppins;
+}
+
+.navbar-brand {
+    color: black !important;
+    font-weight: bold;
+    font-size: 20px;
+}
