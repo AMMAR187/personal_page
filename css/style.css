@@ -166,8 +166,7 @@ footer {
 
 @media screen and (max-width: 758px) {
     #showcase img {
-        width: 90%;
-        /* / margin-left: 60; */
+        width: 100%;
     }
     #showcase h1 {
         font-size: 30px;
