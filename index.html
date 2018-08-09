@@ -13,15 +13,23 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-    <title>Ammar Page</title>
+    <title>AMMAR-187</title>
 </head>
 
 <body>
+    <section class="intro">
+        <div class="container">
+            <span class="title">
+                <h1>Ammar 187</h1>
+            </span>
+            <a href="#navv" class="bb">GET STARTED</a>
+        </div>
+    </section>
 
-    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+    <nav id="navv" class="navbar navbar-default  navbar-collapse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -364,7 +372,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-xm-7">
-                    <h1 class="text-center">Contact Me:</h1>
+                    <h1 id="con" class="text-center">Contact Me:</h1>
                 </div>
                 <div class="col-md-5 col-xm-12">
                     <form>
@@ -392,7 +400,31 @@
     <footer>
         <p class="text-center">AMMAR 187 Copyrights &copy; 2018</p>
     </footer>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+            myFunction2()
+        };
 
+        var navbar = document.getElementById("navv");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("navbar-fixed-top");
+            } else {
+                navbar.classList.remove("navbar-fixed-top");
+            }
+        }
+
+        function myFunction2() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.remove("sticky");
+            } else {
+                navbar.classList.add("sticky");
+            }
+        }
+    </script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

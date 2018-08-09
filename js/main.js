@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     window.sr = ScrollReveal();
     sr.reveal('.navbar', {
         duration: 2000,
@@ -6,13 +7,15 @@ $(document).ready(function () {
     });
     sr.reveal('.showcase-left', {
         duration: 2000,
-        origin: "top",
-        distance: "300px"
+        origin: "left",
+        distance: "300px",
+        viewFactor: 0.4
     });
     sr.reveal('.showcase-right', {
         duration: 2000,
-        origin: "right",
-        distance: "300px"
+        origin: "top",
+        distance: "300px",
+        viewFactor: 0.4
     });
     sr.reveal('.showcase-btn', {
         duration: 2000,
@@ -44,14 +47,26 @@ $(document).ready(function () {
         origin: "bottom",
         distance: "300px",
         viewFactor: 0.4,
-        delay: 1500
+        delay: 2000
     });
     sr.reveal('.tool', {
         duration: 2000,
         origin: "bottom",
         distance: "300px",
         viewFactor: 0.4,
-        delay: 1500
+        delay: 2000
+    });
+    sr.reveal('.title', {
+        duration: 2000,
+        origin: "bottom",
+        distance: "300px",
+        delay: 2000
+    });
+    sr.reveal('.bb', {
+        duration: 2000,
+        origin: "top",
+        distance: "300px",
+        delay: 2000
     });
 
 
@@ -70,16 +85,19 @@ $(document).ready(function () {
             }
         });
     });
+
+
+
 });
 
-if (self.isMobile() && self.config.mobile) elem.config.wait = 0
+// if (self.isMobile() && self.config.mobile) elem.config.wait = 0;
 
-transition = '-webkit-transition: -webkit-transform ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + ', opacity ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + '; ' +
-    'transition: transform ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + ', opacity ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + '; ' +
-    '-webkit-perspective: 1000;' +
-    '-webkit-backface-visibility: hidden;'
+// transition = '-webkit-transition: -webkit-transform ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + ', opacity ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + '; ' +
+//     'transition: transform ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + ', opacity ' + elem.config.over + ' ' + elem.config.easing + ' ' + elem.config.wait + '; ' +
+//     '-webkit-perspective: 1000;' +
+//     '-webkit-backface-visibility: hidden;'
 
-reset = '-webkit-transition: -webkit-transform ' + elem.config.over + ' ' + elem.config.easing + ' 0s, opacity ' + elem.config.over + ' ' + elem.config.easing + ' 0s; ' +
-    'transition: transform ' + elem.config.over + ' ' + elem.config.easing + ' 0s, opacity ' + elem.config.over + ' ' + elem.config.easing + ' 0s; ' +
-    '-webkit-perspective: 1000; ' +
-    '-webkit-backface-visibility: hidden; '
+// reset = '-webkit-transition: -webkit-transform ' + elem.config.over + ' ' + elem.config.easing + ' 0s, opacity ' + elem.config.over + ' ' + elem.config.easing + ' 0s; ' +
+//     'transition: transform ' + elem.config.over + ' ' + elem.config.easing + ' 0s, opacity ' + elem.config.over + ' ' + elem.config.easing + ' 0s; ' +
+//     '-webkit-perspective: 1000; ' +
+//     '-webkit-backface-visibility: hidden;'

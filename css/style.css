@@ -1,6 +1,7 @@
 body {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     font-size: 16px;
+    margin: 0;
 }
 
 h1,
@@ -16,6 +17,11 @@ p {
     font-family: Roboto;
 }
 
+.intro {
+    background: url(../image/Matrix.svg);
+    height: 700px;
+}
+
 .navbar-default {
     background: #fff !important;
     border: 0 !important;
@@ -26,6 +32,55 @@ p {
     color: black !important;
     font-weight: bold;
     font-size: 20px;
+}
+
+.sticky {
+    border-top: #4cd4cc 3px solid !important;
+}
+
+.sticky+#showcase {
+    padding-top: 70px;
+}
+
+.title h1 {
+    font-size: 150px;
+}
+
+.title {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    z-index: 4;
+    color: #4cd4cc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    width: 800px;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Kaushan Script', cursive;
+}
+
+.title:hover {
+    color: #fff;
+}
+
+.bb {
+    font-weight: 400;
+    font-size: 160%;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #4cd4cc;
+    padding: 20px 30px;
+    border-radius: 9px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
+
+.bb:hover {
+    color: #4cd4cc;
+    border: solid #fff;
 }
 
 #showcase h1 {
@@ -164,11 +219,104 @@ footer {
     margin-bottom: 5px;
 }
 
+#con {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 758px) {}
+
+@media screen and (max-width: 1050px) {
+    .title h1 {
+        font-size: 110px;
+    }
+    .title {
+        width: 600px;
+        left: 15%;
+    }
+    .bb {
+        left: 40%;
+        top: 40%;
+    }
+}
+
 @media screen and (max-width: 758px) {
     #showcase img {
         width: 100%;
     }
     #showcase h1 {
         font-size: 30px;
+    }
+    .intro {
+        background: url(../image/Matrix.svg);
+        height: 700px;
+    }
+    .title h1 {
+        font-size: 70px;
+    }
+    .title {
+        width: 400px;
+        left: 20%;
+    }
+    .bb {
+        left: 30%;
+        top: 40%;
+    }
+    #con {
+        /* font-family: 'Pacifico', cursive; */
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .title h1 {
+        font-size: 70px;
+    }
+    .title {
+        width: 400px;
+        left: 10%;
+    }
+    .bb {
+        left: 25%;
+        top: 40%;
+    }
+    #con {
+        /* font-family: 'Pacifico', cursive; */
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .title h1 {
+        font-size: 60px;
+    }
+    .title {
+        width: 350px;
+        left: 10%;
+    }
+    .bb {
+        left: 25%;
+        top: 40%;
+    }
+    #con {
+        /* font-family: 'Pacifico', cursive; */
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .title h1 {
+        font-size: 60px;
+    }
+    .title {
+        width: 320px;
+        left: 10%;
+    }
+    .bb {
+        left: 25%;
+        top: 40%;
+        padding: 9px 18px;
+        font-size: 20px;
     }
 }
