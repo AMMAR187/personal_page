@@ -1,0 +1,19 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "description": "\"my personal page\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "front-end",
+    "back-end"
+  ],
+  "author": "AMMAR MAHMOUD",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}
