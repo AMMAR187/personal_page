@@ -574,11 +574,12 @@ footer {
     }
 
     .title h1 {
-        font-size: 70px;
+        font-size: 100px;
+
     }
 
     .mybtn2 {
-        top: 30%;
+        top: 40%;
     }
 
     .bb {
@@ -676,7 +677,7 @@ footer {
 
 @media screen and (max-width: 377px) {
     .title h1 {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .mybtn2 {

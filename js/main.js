@@ -23,13 +23,14 @@ function myFunction2() {
 }
 $(document).ready(function () {
     $('.bb').on('click touchstart', function () {
-        console.log("hi");
+
 
     });
     $('.mybtn2').on('click touchstart', function () {
-        console.log("hi");
+
 
     });
+
 
     var Title = $('grid-title');
     var Content = $('grid-content');
@@ -139,6 +140,8 @@ wrapper.addEventListener('mousemove', function (e) {
 
     topLayer.style.width = e.clientX + skew + delta + 'px';
 });
+
+
 
 
 // if (self.isMobile() && self.config.mobile) elem.config.wait = 0;
