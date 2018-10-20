@@ -1,4 +1,38 @@
+window.onscroll = function () {
+    myFunction()
+    myFunction2()
+};
+
+var navbar = document.getElementById("navv");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("navbar-fixed-top");
+    } else {
+        navbar.classList.remove("navbar-fixed-top");
+    }
+}
+
+function myFunction2() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.remove("sticky");
+    } else {
+        navbar.classList.add("sticky");
+    }
+}
 $(document).ready(function () {
+    $('.bb').on('click touchstart', function () {
+        console.log("hi");
+
+    });
+    $('.mybtn2').on('click touchstart', function () {
+        console.log("hi");
+
+    });
+
+    var Title = $('grid-title');
+    var Content = $('grid-content');
 
     window.sr = ScrollReveal();
     sr.reveal('.navbar', {
@@ -29,7 +63,7 @@ $(document).ready(function () {
     sr.reveal('#par div .customer', {
         duration: 2000,
         origin: "bottom",
-        delay: 2000,
+        delay: 500,
     });
     sr.reveal('.info-right', {
         duration: 2000,
@@ -46,8 +80,7 @@ $(document).ready(function () {
         duration: 2000,
         origin: "bottom",
         distance: "300px",
-        viewFactor: 0.4,
-        delay: 2000
+        viewFactor: 0.4
     });
     sr.reveal('.tool', {
         duration: 2000,
@@ -86,9 +119,27 @@ $(document).ready(function () {
         });
     });
 
-
-
 });
+
+
+let wrapper = document.getElementById('wrapper');
+let topLayer = wrapper.querySelector('.top');
+let handle = wrapper.querySelector('.handle');
+let skew = 0;
+let delta = 0;
+
+if (wrapper.className.indexOf('skewed') != -1) {
+    skew = 1000;
+}
+
+wrapper.addEventListener('mousemove', function (e) {
+    delta = (e.clientX - window.innerWidth / 2) * 0.5;
+
+    handle.style.left = e.clientX + delta + 'px';
+
+    topLayer.style.width = e.clientX + skew + delta + 'px';
+});
+
 
 // if (self.isMobile() && self.config.mobile) elem.config.wait = 0;
 
